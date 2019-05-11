@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -17,10 +17,10 @@ using System.Diagnostics;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
-	/// <summary>
-	/// Draws all the month grid entries including the column names and day values
-	/// </summary>
-	public class ViewDrawWeekNumbers : ViewLeaf,
+    /// <summary>
+    /// Draws all the month grid entries including the column names and day values
+    /// </summary>
+    public class ViewDrawWeekNumbers : ViewLeaf,
                                        IContentValues
     {
         #region Static Fields
@@ -43,10 +43,10 @@ namespace ComponentFactory.Krypton.Toolkit
         private bool _lastMonth;
         #endregion
 
-		#region Identity
-		/// <summary>
+        #region Identity
+        /// <summary>
         /// Initialize a new instance of the ViewDrawWeekNumbers class.
-		/// </summary>
+        /// </summary>
         /// <param name="calendar">Reference to calendar provider.</param>
         /// <param name="months">Reference to months instance.</param>
         public ViewDrawWeekNumbers(IKryptonMonthCalendar calendar, ViewLayoutMonths months)
@@ -57,15 +57,15 @@ namespace ComponentFactory.Krypton.Toolkit
             _dayMementos = new IDisposable[WEEKS];
         }
 
-		/// <summary>
-		/// Obtains the String representation of this instance.
-		/// </summary>
-		/// <returns>User readable name of the instance.</returns>
-		public override string ToString()
-		{
-			// Return the class name and instance identifier
+        /// <summary>
+        /// Obtains the String representation of this instance.
+        /// </summary>
+        /// <returns>User readable name of the instance.</returns>
+        public override string ToString()
+        {
+            // Return the class name and instance identifier
             return "ViewDrawWeekNumbers:" + Id;
-		}
+        }
 
         /// <summary>
         /// Release unmanaged and optionally managed resources.
@@ -85,7 +85,7 @@ namespace ComponentFactory.Krypton.Toolkit
 
             base.Dispose(disposing);
         }
-		#endregion
+        #endregion
 
         #region Public
         /// <summary>
@@ -148,9 +148,9 @@ namespace ComponentFactory.Krypton.Toolkit
         }
         
         /// <summary>
-		/// Perform a layout of the elements.
-		/// </summary>
-		/// <param name="context">Layout context.</param>
+        /// Perform a layout of the elements.
+        /// </summary>
+        /// <param name="context">Layout context.</param>
         public override void Layout(ViewLayoutContext context)
         {
             Debug.Assert(context != null);

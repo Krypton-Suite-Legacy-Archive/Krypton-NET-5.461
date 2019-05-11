@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -42,14 +42,14 @@ namespace ComponentFactory.Krypton.Ribbon
         #region Identity
         /// <summary>
         /// Initialize a new instance of the RepeatButtonController class.
-		/// </summary>
+        /// </summary>
         /// <param name="ribbon">Reference to owning control.</param>
         /// <param name="needPaint">Delegate for notifying paint requests.</param>
         /// <param name="target">Target for state changes.</param>
         public RepeatButtonController(KryptonRibbon ribbon,
                                       ViewBase target,
                                       NeedPaintHandler needPaint)
-		{
+        {
             Debug.Assert(ribbon != null);
             Debug.Assert(target != null);
 
@@ -66,7 +66,7 @@ namespace ComponentFactory.Krypton.Ribbon
             };
             _repeatTimer.Tick += OnRepeatTick;
         }
-		#endregion
+        #endregion
 
         #region Public
         /// <summary>

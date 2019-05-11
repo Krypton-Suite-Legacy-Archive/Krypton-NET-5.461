@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -30,7 +30,7 @@ namespace ComponentFactory.Krypton.Ribbon
         #region Identity
         /// <summary>
         /// Initialize a new instance of the ViewRibbonPopupGroupManager class.
-		/// </summary>
+        /// </summary>
         /// <param name="control">Owning control.</param>
         /// <param name="ribbon">Owning ribbon control instance.</param>
         /// <param name="root">View for group we are tracking.</param>
@@ -42,7 +42,7 @@ namespace ComponentFactory.Krypton.Ribbon
                                            ViewDrawRibbonGroup viewGroup,
                                            NeedPaintHandler needPaintDelegate)
             : base(control, root)
-		{
+        {
             Debug.Assert(ribbon != null);
             Debug.Assert(viewGroup != null);
             Debug.Assert(needPaintDelegate != null);
@@ -50,7 +50,7 @@ namespace ComponentFactory.Krypton.Ribbon
             _ribbon = ribbon;
             _viewGroup = viewGroup;
             _needPaintDelegate = needPaintDelegate;
-		}
+        }
 
         /// <summary>
         /// Clean up any resources being used.

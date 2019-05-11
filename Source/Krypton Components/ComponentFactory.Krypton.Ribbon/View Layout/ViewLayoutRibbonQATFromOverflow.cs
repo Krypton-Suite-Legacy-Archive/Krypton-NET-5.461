@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -16,9 +16,9 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace ComponentFactory.Krypton.Ribbon
 {
-	/// <summary>
+    /// <summary>
     /// Extends the ViewLayoutRibbonQATContents by providing the definitions that are overflowing the original source.
-	/// </summary>
+    /// </summary>
     internal class ViewLayoutRibbonQATFromOverflow : ViewLayoutRibbonQATContents
     {
         #region Instance Fields
@@ -29,7 +29,7 @@ namespace ComponentFactory.Krypton.Ribbon
         #region Identity
         /// <summary>
         /// Initialize a new instance of the ViewLayoutRibbonQATFromOverflow class.
-		/// </summary>
+        /// </summary>
         /// <param name="parentControl">Owning control used to find screen positions.</param>
         /// <param name="ribbon">Owning ribbon control instance.</param>
         /// <param name="needPaint">Delegate for notifying paint requests.</param>

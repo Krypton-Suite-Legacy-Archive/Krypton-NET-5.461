@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -13,9 +13,9 @@ using System.ComponentModel;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
-	/// <summary>
-	/// Storage of palette calendar day states.
-	/// </summary>
+    /// <summary>
+    /// Storage of palette calendar day states.
+    /// </summary>
     public class KryptonPaletteCalendarDay : Storage
     {
         #region Instance Fields
@@ -25,12 +25,12 @@ namespace ComponentFactory.Krypton.Toolkit
         #region Identity
         /// <summary>
         /// Initialize a new instance of the KryptonPaletteCalendarDay class.
-		/// </summary>
+        /// </summary>
         /// <param name="redirect">Redirector to inherit values from.</param>
         /// <param name="needPaint">Delegate for notifying paint requests.</param>
         public KryptonPaletteCalendarDay(PaletteRedirect redirect,
                                          NeedPaintHandler needPaint) 
-		{
+        {
             // Create the storage objects
             OverrideFocus = new PaletteTripleRedirect(redirect, PaletteBackStyle.ButtonCalendarDay, PaletteBorderStyle.ButtonCalendarDay, PaletteContentStyle.ButtonCalendarDay, needPaint);
             OverrideBolded = new PaletteTripleRedirect(redirect, PaletteBackStyle.ButtonCalendarDay, PaletteBorderStyle.ButtonCalendarDay, PaletteContentStyle.ButtonCalendarDay, needPaint);
@@ -62,20 +62,20 @@ namespace ComponentFactory.Krypton.Toolkit
 
         #region IsDefault
         /// <summary>
-		/// Gets a value indicating if all values are default.
-		/// </summary>
-		[Browsable(false)]
-		public override bool IsDefault => StateCommon.IsDefault &&
-		                                  OverrideFocus.IsDefault &&
-		                                  OverrideBolded.IsDefault &&
-		                                  OverrideToday.IsDefault &&
-		                                  StateDisabled.IsDefault &&
-		                                  StateNormal.IsDefault &&
-		                                  StateTracking.IsDefault &&
-		                                  StatePressed.IsDefault &&
-		                                  StateCheckedNormal.IsDefault &&
-		                                  StateCheckedTracking.IsDefault &&
-		                                  StateCheckedPressed.IsDefault;
+        /// Gets a value indicating if all values are default.
+        /// </summary>
+        [Browsable(false)]
+        public override bool IsDefault => StateCommon.IsDefault &&
+                                          OverrideFocus.IsDefault &&
+                                          OverrideBolded.IsDefault &&
+                                          OverrideToday.IsDefault &&
+                                          StateDisabled.IsDefault &&
+                                          StateNormal.IsDefault &&
+                                          StateTracking.IsDefault &&
+                                          StatePressed.IsDefault &&
+                                          StateCheckedNormal.IsDefault &&
+                                          StateCheckedTracking.IsDefault &&
+                                          StateCheckedPressed.IsDefault;
 
         #endregion
 

@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -15,31 +15,31 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace ComponentFactory.Krypton.Ribbon
 {
-	/// <summary>
-	/// Process mouse events for a ribbon group masked textbox.
-	/// </summary>
+    /// <summary>
+    /// Process mouse events for a ribbon group masked textbox.
+    /// </summary>
     internal class MaskedTextBoxController : GlobalId,
                                              ISourceController,
                                              IKeyController,
                                              IRibbonKeyTipTarget
-	{
-		#region Instance Fields
+    {
+        #region Instance Fields
         private readonly KryptonRibbon _ribbon;
         private readonly KryptonRibbonGroupMaskedTextBox _maskedTextBox;
         private readonly ViewDrawRibbonGroupMaskedTextBox _target;
         #endregion
 
-		#region Identity
-		/// <summary>
+        #region Identity
+        /// <summary>
         /// Initialize a new instance of the MaskedTextBoxController class.
-		/// </summary>
+        /// </summary>
         /// <param name="ribbon">Reference to owning ribbon instance.</param>
         /// <param name="maskedTextBox">Source definition.</param>
         /// <param name="target">Target view element.</param>
         public MaskedTextBoxController(KryptonRibbon ribbon,
                                        KryptonRibbonGroupMaskedTextBox maskedTextBox,
                                        ViewDrawRibbonGroupMaskedTextBox target)
-		{
+        {
             Debug.Assert(ribbon != null);
             Debug.Assert(maskedTextBox != null);
             Debug.Assert(target != null);
@@ -48,7 +48,7 @@ namespace ComponentFactory.Krypton.Ribbon
             _maskedTextBox = maskedTextBox;
             _target = target;
         }
-		#endregion
+        #endregion
 
         #region Focus Notifications
         /// <summary>

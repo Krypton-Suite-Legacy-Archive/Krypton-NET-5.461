@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -17,9 +17,9 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace ComponentFactory.Krypton.Navigator
 {
-	/// <summary>
-	/// Storage for bar related properties.
-	/// </summary>
+    /// <summary>
+    /// Storage for bar related properties.
+    /// </summary>
     public class NavigatorBar : Storage
     {
         #region Static Fields
@@ -54,12 +54,12 @@ namespace ComponentFactory.Krypton.Navigator
         #region Identity
         /// <summary>
         /// Initialize a new instance of the NavigatorBar class.
-		/// </summary>
+        /// </summary>
         /// <param name="navigator">Reference to owning navigator instance.</param>
         /// <param name="needPaint">Delegate for notifying paint requests.</param>
         public NavigatorBar(KryptonNavigator navigator,
                             NeedPaintHandler needPaint)
-		{
+        {
             Debug.Assert(navigator != null);
             
             // Remember back reference
@@ -87,7 +87,7 @@ namespace ComponentFactory.Krypton.Navigator
             _barMapText = MapKryptonPageText.TextTitle;
             _barMapExtraText = MapKryptonPageText.None;
         }
-		#endregion
+        #endregion
 
         #region IsDefault
         /// <summary>

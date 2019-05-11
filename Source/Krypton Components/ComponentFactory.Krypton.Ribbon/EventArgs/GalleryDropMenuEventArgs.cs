@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -14,32 +14,32 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace ComponentFactory.Krypton.Ribbon
 {
-	/// <summary>
-	/// Event arguments for the drop down menu of a gallery.
-	/// </summary>
-	public class GalleryDropMenuEventArgs : CancelEventArgs
-	{
-		#region Instance Fields
+    /// <summary>
+    /// Event arguments for the drop down menu of a gallery.
+    /// </summary>
+    public class GalleryDropMenuEventArgs : CancelEventArgs
+    {
+        #region Instance Fields
 
-	    #endregion
+        #endregion
 
-		#region Identity
-		/// <summary>
+        #region Identity
+        /// <summary>
         /// Initialize a new instance of the GalleryDropMenuEventArgs class.
-		/// </summary>
+        /// </summary>
         /// <param name="contextMenu">Context menu.</param>
         public GalleryDropMenuEventArgs(KryptonContextMenu contextMenu)
-		{
+        {
             KryptonContextMenu = contextMenu;
-		}
-		#endregion
+        }
+        #endregion
 
-		#region Public
-		/// <summary>
-		/// KryptonContextMenu for display.
-		/// </summary>
+        #region Public
+        /// <summary>
+        /// KryptonContextMenu for display.
+        /// </summary>
         public KryptonContextMenu KryptonContextMenu { get; }
 
-	    #endregion
-	}
+        #endregion
+    }
 }

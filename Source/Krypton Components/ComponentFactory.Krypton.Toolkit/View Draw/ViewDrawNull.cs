@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -25,29 +25,29 @@ namespace ComponentFactory.Krypton.Toolkit
         #region Identity
         /// <summary>
         /// Initialize a new instance of the ViewDrawNull class.
-		/// </summary>
+        /// </summary>
         /// <param name="fillColor">Color to fill drawing area.</param>
         public ViewDrawNull(Color fillColor)
-		{
+        {
             _fillColor = fillColor;
-		}
+        }
 
-		/// <summary>
-		/// Obtains the String representation of this instance.
-		/// </summary>
-		/// <returns>User readable name of the instance.</returns>
-		public override string ToString()
-		{
-			// Return the class name and instance identifier
+        /// <summary>
+        /// Obtains the String representation of this instance.
+        /// </summary>
+        /// <returns>User readable name of the instance.</returns>
+        public override string ToString()
+        {
+            // Return the class name and instance identifier
             return "ViewDrawNull:" + Id;
-		}
-		#endregion
+        }
+        #endregion
 
-		#region Paint
-		/// <summary>
-		/// Perform rendering before child elements are rendered.
-		/// </summary>
-		/// <param name="context">Rendering context.</param>
+        #region Paint
+        /// <summary>
+        /// Perform rendering before child elements are rendered.
+        /// </summary>
+        /// <param name="context">Rendering context.</param>
         public override void RenderBefore(RenderContext context)
         {
             using(SolidBrush fillBrush = new SolidBrush(_fillColor))

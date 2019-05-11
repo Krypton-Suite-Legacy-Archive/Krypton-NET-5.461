@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -215,7 +215,7 @@ namespace ComponentFactory.Krypton.Toolkit
     //       #region Identity
     //       /// <summary>
     //       /// Initialize a new instance of the SeparatorController class.
-    //	/// </summary>
+    //    /// </summary>
     //       /// <param name="source">Source of separator information.</param>
     //       /// <param name="target">Target for state changes.</param>
     //       /// <param name="splitCursors">Show as split or movement cursors.</param>
@@ -401,8 +401,8 @@ namespace ComponentFactory.Krypton.Toolkit
     //       }
 
     //       /// <summary>
-    //	/// Mouse has left the view.
-    //	/// </summary>
+    //    /// Mouse has left the view.
+    //    /// </summary>
     //       /// <param name="c">Reference to the source control instance.</param>
     //       /// <param name="next">Reference to view that is next to have the mouse.</param>
     //       public override void MouseLeave(Control c, ViewBase next)
@@ -817,6 +817,9 @@ namespace ComponentFactory.Krypton.Toolkit
 
     {
         #region Types
+        /// <summary>
+        /// 
+        /// </summary>
         public class SeparatorIndicator : Form
         {
             #region Instance Fields
@@ -857,7 +860,7 @@ namespace ComponentFactory.Krypton.Toolkit
             public void ShowWithoutActivate()
             {
                 // Show the window without activating it (i.e. do not take focus)
-                PI.ShowWindow(this.Handle, (short)PI.SW_SHOWNOACTIVATE);
+                PI.ShowWindow(this.Handle, PI.ShowWindowCommands.SW_SHOWNOACTIVATE);
             }
 
             /// <summary>
@@ -888,13 +891,15 @@ namespace ComponentFactory.Krypton.Toolkit
             protected override void WndProc(ref Message m)
             {
                 // We are a transparent window, so mouse is never over us
-                if (m.Msg == (int)PI.WM_NCHITTEST)
+                if (m.Msg == PI.WM_.NCHITTEST)
                 {
                     // Allow actions to occur to window beneath us
-                    m.Result = (IntPtr)PI.HTTRANSPARENT;
+                    m.Result = (IntPtr)PI.HT.TRANSPARENT;
                 }
                 else
+                {
                     base.WndProc(ref m);
+                }
             }
             #endregion
         }
@@ -920,6 +925,7 @@ namespace ComponentFactory.Krypton.Toolkit
         private SeparatorMessageFilter _filter;
         private ISeparatorSource _source;
         private SeparatorIndicator _indicator;
+        private KryptonPalette _palette = new KryptonPalette();
         #endregion
 
         #region Identity
@@ -978,9 +984,13 @@ namespace ComponentFactory.Krypton.Toolkit
             {
                 // Cursor depends on orientation direction
                 if (_source.SeparatorOrientation == Orientation.Vertical)
+                {
                     _source.SeparatorControl.Cursor = (_splitCursors ? _cursorVSplit : _cursorVMove);
+                }
                 else
+                {
                     _source.SeparatorControl.Cursor = (_splitCursors ? _cursorHSplit : _cursorHMove);
+                }
             }
 
             // If we are currently capturing input
@@ -992,7 +1002,9 @@ namespace ComponentFactory.Krypton.Toolkit
 
                 // Callback to the source to show movement
                 if (_source.SeparatorMoving(pt, splitPt))
+                {
                     AbortMoving();
+                }
             }
 
             // Let base class do standard processing
@@ -1095,7 +1107,9 @@ namespace ComponentFactory.Krypton.Toolkit
         {
             // If leaving when currently moving, then abort the movement
             if (_moving)
+            {
                 AbortMoving();
+            }
 
             // Reset the cursor back to the default
             _source.SeparatorControl.Cursor = Cursors.Default;
@@ -1127,14 +1141,19 @@ namespace ComponentFactory.Krypton.Toolkit
             Debug.Assert(e != null);
 
             // Validate reference parameter
-            if (e == null) throw new ArgumentNullException("e");
+            if (e == null)
+            {
+                throw new ArgumentNullException("e");
+            }
 
             // If the user pressed the escape key
             if (e.KeyCode == Keys.Escape)
             {
                 // If we are capturing mouse input
                 if (_moving)
+                {
                     AbortMoving();
+                }
             }
 
             return _moving;
@@ -1150,7 +1169,9 @@ namespace ComponentFactory.Krypton.Toolkit
         {
             // If we are capturing mouse input
             if (_moving)
+            {
                 AbortMoving();
+            }
         }
         #endregion
 
@@ -1177,7 +1198,9 @@ namespace ComponentFactory.Krypton.Toolkit
 
                 // Remove the capturing of mouse input messages
                 if (_source.SeparatorControl.Capture)
+                {
                     _source.SeparatorControl.Capture = false;
+                }
 
                 // Remove the message filter, as long as it is registered 
                 // it will prevent the class from being garbage collected.
@@ -1271,18 +1294,26 @@ namespace ComponentFactory.Krypton.Toolkit
             if (_separatorOrientation == Orientation.Vertical)
             {
                 if (Target.ClientLocation.X + xDelta < _separatorBox.Left)
+                {
                     xDelta = _separatorBox.Left - Target.ClientLocation.X;
+                }
 
                 if (Target.ClientLocation.X + xDelta > _separatorBox.Right)
+                {
                     xDelta = _separatorBox.Right - Target.ClientLocation.X;
+                }
             }
             else
             {
                 if (Target.ClientLocation.Y + yDelta < _separatorBox.Top)
+                {
                     yDelta = _separatorBox.Top - Target.ClientLocation.Y;
+                }
 
                 if (Target.ClientLocation.Y + yDelta > _separatorBox.Bottom)
+                {
                     yDelta = _separatorBox.Bottom - Target.ClientLocation.Y;
+                }
             }
 
             // Enforce the increments on the deltas
@@ -1333,9 +1364,13 @@ namespace ComponentFactory.Krypton.Toolkit
         private Rectangle SplitRectangleFromPoint(Point pt)
         {
             if (_separatorOrientation == Orientation.Vertical)
+            {
                 return SplitRectangleFromPoint(pt, Target.ClientWidth);
+            }
             else
+            {
                 return SplitRectangleFromPoint(pt, Target.ClientHeight);
+            }
         }
 
         private Rectangle SplitRectangleFromPoint(Point pt, int length)
@@ -1344,9 +1379,13 @@ namespace ComponentFactory.Krypton.Toolkit
 
             // Find the splitter rectangle based on the orientation
             if (_separatorOrientation == Orientation.Vertical)
+            {
                 splitRectangle = new Rectangle(pt.X, _separatorBox.Y, length, Target.ClientHeight);
+            }
             else
+            {
                 splitRectangle = new Rectangle(_separatorBox.X, pt.Y, Target.ClientWidth, length);
+            }
 
             return _source.SeparatorControl.RectangleToScreen(splitRectangle);
         }
@@ -1420,11 +1459,15 @@ namespace ComponentFactory.Krypton.Toolkit
         {
             // We are only interested in filtering when moving the separator
             if (!_controller.IsMoving)
+            {
                 return false;
+            }
 
             // We allow all non-keyboard messages
             if ((m.Msg < 0x100) || (m.Msg > 0x108))
+            {
                 return false;
+            }
 
             // If the user presses the escape key, windows keys or any system key
             if (((m.Msg == 0x100) && (((int)m.WParam.ToInt64()) == 0x1B)) ||

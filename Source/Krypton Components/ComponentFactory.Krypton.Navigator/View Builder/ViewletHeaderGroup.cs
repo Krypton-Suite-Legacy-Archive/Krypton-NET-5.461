@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -67,8 +67,8 @@ namespace ComponentFactory.Krypton.Navigator
         public PaletteRedirect Redirector { get; }
 
         /// <summary>
-		/// Construct the view appropriate for this builder.
-		/// </summary>
+        /// Construct the view appropriate for this builder.
+        /// </summary>
         /// <param name="filler">View element to fill in the header group.</param>
         /// <returns>The root of the header group hierarchy.</returns>
         public ViewDrawDocker Construct(ViewBase filler)
@@ -440,6 +440,11 @@ namespace ComponentFactory.Krypton.Navigator
                     _buttonManager.SetDockerMetrics(drawDocker, palette,
                                                     PaletteMetricInt.HeaderButtonEdgeInsetCustom2,
                                                     PaletteMetricPadding.HeaderButtonPaddingCustom2);
+                    break;
+                case HeaderStyle.Custom3:
+                    _buttonManager.SetDockerMetrics(drawDocker, palette,
+                        PaletteMetricInt.HeaderButtonEdgeInsetCustom3,
+                        PaletteMetricPadding.HeaderButtonPaddingCustom3);
                     break;
                 default:
                     // Should never happen!

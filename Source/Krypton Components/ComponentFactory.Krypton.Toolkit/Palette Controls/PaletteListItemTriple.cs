@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -14,42 +14,42 @@ using System.Diagnostics;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
-	/// <summary>
-	/// Implement storage for a a list item triple.
-	/// </summary>
-	public class PaletteListItemTriple : Storage
-	{
-		#region Instance Fields
+    /// <summary>
+    /// Implement storage for a a list item triple.
+    /// </summary>
+    public class PaletteListItemTriple : Storage
+    {
+        #region Instance Fields
         private readonly PaletteTriple _paletteItem;
-		#endregion
+        #endregion
 
-		#region Identity
-		/// <summary>
+        #region Identity
+        /// <summary>
         /// Initialize a new instance of the PaletteListItemTriple class.
-		/// </summary>
+        /// </summary>
         /// <param name="inherit">Source for inheriting values.</param>
         /// <param name="needPaint">Delegate for notifying paint requests.</param>
         public PaletteListItemTriple(PaletteTripleRedirect inherit,
                                      NeedPaintHandler needPaint)
-		{
+        {
             Debug.Assert(inherit != null);
 
             // Store the provided paint notification delegate
             NeedPaint = needPaint;
 
-			// Create storage that maps onto the inherit instances
+            // Create storage that maps onto the inherit instances
             _paletteItem = new PaletteTriple(inherit, needPaint);
         }
-		#endregion
+        #endregion
 
         #region IsDefault
-		/// <summary>
-		/// Gets a value indicating if all values are default.
-		/// </summary>
-		[Browsable(false)]
-		public override bool IsDefault => _paletteItem.IsDefault;
+        /// <summary>
+        /// Gets a value indicating if all values are default.
+        /// </summary>
+        [Browsable(false)]
+        public override bool IsDefault => _paletteItem.IsDefault;
 
-	    #endregion
+        #endregion
 
         #region PopulateFromBase
         /// <summary>
@@ -82,10 +82,10 @@ namespace ComponentFactory.Krypton.Toolkit
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public virtual PaletteTriple Item => _paletteItem;
 
-	    private bool ShouldSerializeItem()
+        private bool ShouldSerializeItem()
         {
             return !_paletteItem.IsDefault;
         }
         #endregion
-	}
+    }
 }

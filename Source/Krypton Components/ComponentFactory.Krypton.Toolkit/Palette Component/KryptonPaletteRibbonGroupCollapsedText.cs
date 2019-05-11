@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -13,9 +13,9 @@ using System.ComponentModel;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
-	/// <summary>
-	/// Storage for palette ribbon group collapsed text states.
-	/// </summary>
+    /// <summary>
+    /// Storage for palette ribbon group collapsed text states.
+    /// </summary>
     public class KryptonPaletteRibbonGroupCollapsedText : Storage
     {
         #region Instance Fields
@@ -26,12 +26,12 @@ namespace ComponentFactory.Krypton.Toolkit
         #region Identity
         /// <summary>
         /// Initialize a new instance of the KryptonPaletteRibbonGroupCollapsedText class.
-		/// </summary>
+        /// </summary>
         /// <param name="redirect">Redirector to inherit values from.</param>
         /// <param name="needPaint">Delegate for notifying paint requests.</param>
         public KryptonPaletteRibbonGroupCollapsedText(PaletteRedirect redirect,
                                                       NeedPaintHandler needPaint) 
-		{
+        {
             // Create the storage objects
             _stateInherit = new PaletteRibbonTextInheritRedirect(redirect, PaletteRibbonTextStyle.RibbonGroupCollapsedText);
             StateCommon = new PaletteRibbonText(_stateInherit, needPaint);
@@ -53,16 +53,16 @@ namespace ComponentFactory.Krypton.Toolkit
         }
         #endregion
 
-		#region IsDefault
-		/// <summary>
-		/// Gets a value indicating if all values are default.
-		/// </summary>
-		[Browsable(false)]
-		public override bool IsDefault => StateCommon.IsDefault &&
-		                                  StateNormal.IsDefault &&
-		                                  StateTracking.IsDefault &&
-		                                  StateContextNormal.IsDefault &&
-		                                  StateContextTracking.IsDefault;
+        #region IsDefault
+        /// <summary>
+        /// Gets a value indicating if all values are default.
+        /// </summary>
+        [Browsable(false)]
+        public override bool IsDefault => StateCommon.IsDefault &&
+                                          StateNormal.IsDefault &&
+                                          StateTracking.IsDefault &&
+                                          StateContextNormal.IsDefault &&
+                                          StateContextTracking.IsDefault;
 
         #endregion
 

@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -15,18 +15,18 @@ using System.Drawing.Drawing2D;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
-	/// <summary>
-	/// Set the SmoothingMode=AntiAlias until instance disposed.
-	/// </summary>
+    /// <summary>
+    /// Set the SmoothingMode=AntiAlias until instance disposed.
+    /// </summary>
     public class AntiAlias : GlobalId,
                              IDisposable
-	{
-		#region Instance Fields
+    {
+        #region Instance Fields
         private readonly Graphics _g;
         private readonly SmoothingMode _old;
-		#endregion
+        #endregion
 
-		#region Identity
+        #region Identity
         /// <summary>
         /// Initialize a new instance of the UseAntiAlias class.
         /// </summary>
@@ -52,8 +52,8 @@ namespace ComponentFactory.Krypton.Toolkit
                 catch { }
             }
         }
-		#endregion
-	}
+        #endregion
+    }
 
     /// <summary>
     /// Set the SmoothingMode=None until instance disposed.

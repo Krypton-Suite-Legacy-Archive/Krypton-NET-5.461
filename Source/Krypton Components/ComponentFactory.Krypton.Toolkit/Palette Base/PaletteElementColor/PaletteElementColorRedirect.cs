@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -11,9 +11,9 @@
 
 namespace ComponentFactory.Krypton.Toolkit
 {
-	/// <summary>
-	/// Storage for element color values.
-	/// </summary>
+    /// <summary>
+    /// Storage for element color values.
+    /// </summary>
     public class PaletteElementColorRedirect : PaletteElementColor
     {
         #region Instance Fields
@@ -23,7 +23,7 @@ namespace ComponentFactory.Krypton.Toolkit
         #region Identity
         /// <summary>
         /// Initialize a new instance of the PaletteElementColorRedirect class.
-		/// </summary>
+        /// </summary>
         /// <param name="redirect">Source for inheriting values.</param>
         /// <param name="element">Element value.</param>
         /// <param name="needPaint">Delegate for notifying changes in value.</param>
@@ -31,7 +31,7 @@ namespace ComponentFactory.Krypton.Toolkit
                                            PaletteElement element,
                                            NeedPaintHandler needPaint)
             : base(null, needPaint)
-		{
+        {
             // Setup inheritence to recover values from the redirect instance
             _redirect = new PaletteElementColorInheritRedirect(redirect, element);
             SetInherit(_redirect);

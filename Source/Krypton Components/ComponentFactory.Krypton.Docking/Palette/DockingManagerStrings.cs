@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -14,9 +14,9 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace ComponentFactory.Krypton.Docking
 {
-	/// <summary>
-	/// Storage for docking managee strings.
-	/// </summary>
+    /// <summary>
+    /// Storage for docking managee strings.
+    /// </summary>
     public class DockingManagerStrings : Storage
     {
         #region Static Fields
@@ -53,11 +53,11 @@ namespace ComponentFactory.Krypton.Docking
         #region Identity
         /// <summary>
         /// Initialize a new instance of the DockingManagerStrings class.
-		/// </summary>
+        /// </summary>
         /// <param name="docking">Reference to owning docking manager.</param>
         public DockingManagerStrings(KryptonDockingManager docking)
             : base()
-		{
+        {
             // Default values
             _textAutoHide = DEFAULT_TEXT_AUTO_HIDE;
             _textClose = DEFAULT_TEXT_CLOSE;
@@ -68,7 +68,7 @@ namespace ComponentFactory.Krypton.Docking
             _textTabbedDocument = DEFAULT_TEXT_TABBED_DOCUMENT;
             _textWindowLocation = DEFAULT_TEXT_WINDOW_LOCATION;
         }
-		#endregion
+        #endregion
 
         #region IsDefault
         /// <summary>

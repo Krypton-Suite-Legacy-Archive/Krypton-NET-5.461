@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -16,43 +16,43 @@ namespace ComponentFactory.Krypton.Toolkit
 {
     #region IMouseController
     /// <summary>
-	/// Interface for processing mouse notifications.
-	/// </summary>
-	public interface IMouseController
-	{
-		/// <summary>
-		/// Mouse has entered the view.
-		/// </summary>
+    /// Interface for processing mouse notifications.
+    /// </summary>
+    public interface IMouseController
+    {
+        /// <summary>
+        /// Mouse has entered the view.
+        /// </summary>
         /// <param name="c">Reference to the source control instance.</param>
-		void MouseEnter(Control c);
+        void MouseEnter(Control c);
 
-		/// <summary>
-		/// Mouse has moved inside the view.
-		/// </summary>
+        /// <summary>
+        /// Mouse has moved inside the view.
+        /// </summary>
         /// <param name="c">Reference to the source control instance.</param>
-		/// <param name="pt">Mouse position relative to control.</param>
-		void MouseMove(Control c, Point pt);
+        /// <param name="pt">Mouse position relative to control.</param>
+        void MouseMove(Control c, Point pt);
 
-		/// <summary>
-		/// Mouse button has been pressed in the view.
-		/// </summary>
+        /// <summary>
+        /// Mouse button has been pressed in the view.
+        /// </summary>
         /// <param name="c">Reference to the source control instance.</param>
-		/// <param name="pt">Mouse position relative to control.</param>
-		/// <param name="button">Mouse button pressed down.</param>
-		/// <returns>True if capturing input; otherwise false.</returns>
-		bool MouseDown(Control c, Point pt, MouseButtons button);
+        /// <param name="pt">Mouse position relative to control.</param>
+        /// <param name="button">Mouse button pressed down.</param>
+        /// <returns>True if capturing input; otherwise false.</returns>
+        bool MouseDown(Control c, Point pt, MouseButtons button);
 
-		/// <summary>
-		/// Mouse button has been released in the view.
-		/// </summary>
+        /// <summary>
+        /// Mouse button has been released in the view.
+        /// </summary>
         /// <param name="c">Reference to the source control instance.</param>
-		/// <param name="pt">Mouse position relative to control.</param>
-		/// <param name="button">Mouse button released.</param>
-		void MouseUp(Control c, Point pt, MouseButtons button);
+        /// <param name="pt">Mouse position relative to control.</param>
+        /// <param name="button">Mouse button released.</param>
+        void MouseUp(Control c, Point pt, MouseButtons button);
 
-		/// <summary>
-		/// Mouse has left the view.
-		/// </summary>
+        /// <summary>
+        /// Mouse has left the view.
+        /// </summary>
         /// <param name="c">Reference to the source control instance.</param>
         /// <param name="next">Reference to view that is next to have the mouse.</param>
         void MouseLeave(Control c, ViewBase next);
@@ -72,8 +72,8 @@ namespace ComponentFactory.Krypton.Toolkit
 
     #region IKeyController
     /// <summary>
-	/// Interface for processing keyboard notifications.
-	/// </summary>
+    /// Interface for processing keyboard notifications.
+    /// </summary>
     public interface IKeyController
     {
         /// <summary>
@@ -102,8 +102,8 @@ namespace ComponentFactory.Krypton.Toolkit
 
     #region ISourceController
     /// <summary>
-	/// Interface for processing source notifications.
-	/// </summary>
+    /// Interface for processing source notifications.
+    /// </summary>
     public interface ISourceController
     {
         /// <summary>

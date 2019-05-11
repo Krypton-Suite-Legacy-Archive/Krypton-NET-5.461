@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -14,32 +14,32 @@ using ComponentFactory.Krypton.Navigator;
 
 namespace ComponentFactory.Krypton.Docking
 {
-	/// <summary>
+    /// <summary>
     /// Event arguments for events that need to provide a colletion of pages.
-	/// </summary>
-	public class PagesEventArgs : EventArgs
-	{
-		#region Instance Fields
+    /// </summary>
+    public class PagesEventArgs : EventArgs
+    {
+        #region Instance Fields
 
-	    #endregion
-
-		#region Identity
-		/// <summary>
-        /// Initialize a new instance of the PagesEventArgs class.
-		/// </summary>
-        /// <param name="pages">Collection of pages.</param>
-        public PagesEventArgs(KryptonPageCollection pages)
-		{
-            Pages = pages;
-		}
         #endregion
 
-		#region Public
+        #region Identity
+        /// <summary>
+        /// Initialize a new instance of the PagesEventArgs class.
+        /// </summary>
+        /// <param name="pages">Collection of pages.</param>
+        public PagesEventArgs(KryptonPageCollection pages)
+        {
+            Pages = pages;
+        }
+        #endregion
+
+        #region Public
         /// <summary>
         /// Gets access to a collection of pages.
         /// </summary>
         public KryptonPageCollection Pages { get; }
 
-	    #endregion
-	}
+        #endregion
+    }
 }

@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -13,32 +13,32 @@ using System;
 
 namespace ComponentFactory.Krypton.Workspace
 {
-	/// <summary>
-	/// Workspace cell event data.
-	/// </summary>
-	public class WorkspaceCellEventArgs : EventArgs
-	{
-		#region Instance Fields
+    /// <summary>
+    /// Workspace cell event data.
+    /// </summary>
+    public class WorkspaceCellEventArgs : EventArgs
+    {
+        #region Instance Fields
 
-	    #endregion
+        #endregion
 
-		#region Identity
-		/// <summary>
+        #region Identity
+        /// <summary>
         /// Initialize a new instance of the WorkspaceCellEventArgs class.
-		/// </summary>
+        /// </summary>
         /// <param name="cell">Workspace cell associated with the event.</param>
         public WorkspaceCellEventArgs(KryptonWorkspaceCell cell)
-		{
+        {
             Cell = cell;
-		}
-		#endregion
+        }
+        #endregion
 
-		#region Public
-		/// <summary>
+        #region Public
+        /// <summary>
         /// Gets the cell reference.
-		/// </summary>
+        /// </summary>
         public KryptonWorkspaceCell Cell { get; }
 
-	    #endregion
-	}
+        #endregion
+    }
 }

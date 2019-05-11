@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -32,12 +32,12 @@ namespace ComponentFactory.Krypton.Toolkit
         #region Identity
         /// <summary>
         /// Initialize a new instance of the ViewDrawMenuCheckBox class.
-		/// </summary>
+        /// </summary>
         /// <param name="provider">Reference to provider.</param>
         /// <param name="checkBox">Reference to owning check box entry.</param>
         public ViewDrawMenuCheckBox(IContextMenuProvider provider,
                                     KryptonContextMenuCheckBox checkBox)
-		{
+        {
             _provider = provider;
             KryptonContextMenuCheckBox = checkBox;
 
@@ -110,15 +110,15 @@ namespace ComponentFactory.Krypton.Toolkit
             }
         }
 
-		/// <summary>
-		/// Obtains the String representation of this instance.
-		/// </summary>
-		/// <returns>User readable name of the instance.</returns>
-		public override string ToString()
-		{
-			// Return the class name and instance identifier
+        /// <summary>
+        /// Obtains the String representation of this instance.
+        /// </summary>
+        /// <returns>User readable name of the instance.</returns>
+        public override string ToString()
+        {
+            // Return the class name and instance identifier
             return "ViewDrawMenuCheckBox:" + Id;
-		}
+        }
 
         /// <summary>
         /// Clean up any resources being used.
@@ -334,9 +334,9 @@ namespace ComponentFactory.Krypton.Toolkit
 
         #region Layout
         /// <summary>
-		/// Discover the preferred size of the element.
-		/// </summary>
-		/// <param name="context">Layout context.</param>
+        /// Discover the preferred size of the element.
+        /// </summary>
+        /// <param name="context">Layout context.</param>
         public override Size GetPreferredSize(ViewLayoutContext context)
         {
             Debug.Assert(context != null);

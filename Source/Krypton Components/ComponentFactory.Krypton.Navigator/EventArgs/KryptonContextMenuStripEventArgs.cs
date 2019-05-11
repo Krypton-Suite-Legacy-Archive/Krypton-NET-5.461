@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -13,30 +13,30 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace ComponentFactory.Krypton.Navigator
 {
-	/// <summary>
-	/// Details providing a KryptonContextMenu instance.
-	/// </summary>
+    /// <summary>
+    /// Details providing a KryptonContextMenu instance.
+    /// </summary>
     public class KryptonContextMenuEventArgs : KryptonPageEventArgs
-	{
-		#region Instance Fields
+    {
+        #region Instance Fields
 
-	    #endregion
+        #endregion
 
-		#region Identity
-		/// <summary>
+        #region Identity
+        /// <summary>
         /// Initialize a new instance of the KryptonContextMenuEventArgs class.
-		/// </summary>
-		/// <param name="page">Page effected by event.</param>
-		/// <param name="index">Index of page in the owning collection.</param>
+        /// </summary>
+        /// <param name="page">Page effected by event.</param>
+        /// <param name="index">Index of page in the owning collection.</param>
         /// <param name="contextMenu">Prepopulated context menu ready for display.</param>
         public KryptonContextMenuEventArgs(KryptonPage page, 
                                            int index,
                                            KryptonContextMenu contextMenu)
-			: base(page, index)
-		{
+            : base(page, index)
+        {
             KryptonContextMenu = contextMenu;
-		}
-		#endregion
+        }
+        #endregion
 
         #region KryptonContextMenu
         /// <summary>
@@ -44,6 +44,6 @@ namespace ComponentFactory.Krypton.Navigator
         /// </summary>
         public KryptonContextMenu KryptonContextMenu { get; }
 
-	    #endregion
+        #endregion
     }
 }

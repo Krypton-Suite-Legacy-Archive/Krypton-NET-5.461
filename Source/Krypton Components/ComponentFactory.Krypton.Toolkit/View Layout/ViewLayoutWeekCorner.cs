@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -14,10 +14,10 @@ using System.Diagnostics;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
-	/// <summary>
-	/// Allocate space for the week number corner in the month calendar.
-	/// </summary>
-	public class ViewLayoutWeekCorner : ViewLeaf
+    /// <summary>
+    /// Allocate space for the week number corner in the month calendar.
+    /// </summary>
+    public class ViewLayoutWeekCorner : ViewLeaf
     {
         #region Instance Fields
         private IKryptonMonthCalendar _calendar;
@@ -25,10 +25,10 @@ namespace ComponentFactory.Krypton.Toolkit
         private readonly PaletteBorder _palette;
         #endregion
 
-		#region Identity
-		/// <summary>
+        #region Identity
+        /// <summary>
         /// Initialize a new instance of the ViewLayoutWeekCorner class.
-		/// </summary>
+        /// </summary>
         /// <param name="calendar">Reference to calendar provider.</param>
         /// <param name="months">Reference to months instance.</param>
         /// <param name="palette">Reference to border palette.</param>
@@ -41,16 +41,16 @@ namespace ComponentFactory.Krypton.Toolkit
             _palette = palette;
         }
 
-		/// <summary>
-		/// Obtains the String representation of this instance.
-		/// </summary>
-		/// <returns>User readable name of the instance.</returns>
-		public override string ToString()
-		{
-			// Return the class name and instance identifier
+        /// <summary>
+        /// Obtains the String representation of this instance.
+        /// </summary>
+        /// <returns>User readable name of the instance.</returns>
+        public override string ToString()
+        {
+            // Return the class name and instance identifier
             return "ViewLayoutWeekCorner:" + Id;
-		}
-		#endregion
+        }
+        #endregion
 
         #region Layout
         /// <summary>
@@ -71,9 +71,9 @@ namespace ComponentFactory.Krypton.Toolkit
         }
         
         /// <summary>
-		/// Perform a layout of the elements.
-		/// </summary>
-		/// <param name="context">Layout context.</param>
+        /// Perform a layout of the elements.
+        /// </summary>
+        /// <param name="context">Layout context.</param>
         public override void Layout(ViewLayoutContext context)
         {
             Debug.Assert(context != null);

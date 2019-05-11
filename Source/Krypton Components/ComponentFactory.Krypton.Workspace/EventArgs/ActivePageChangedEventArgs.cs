@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -14,40 +14,40 @@ using ComponentFactory.Krypton.Navigator;
 
 namespace ComponentFactory.Krypton.Workspace
 {
-	/// <summary>
-	/// Data associated with a change in the active page.
-	/// </summary>
-	public class ActivePageChangedEventArgs : EventArgs
-	{
-		#region Instance Fields
+    /// <summary>
+    /// Data associated with a change in the active page.
+    /// </summary>
+    public class ActivePageChangedEventArgs : EventArgs
+    {
+        #region Instance Fields
 
-	    #endregion
+        #endregion
 
-		#region Identity
-		/// <summary>
+        #region Identity
+        /// <summary>
         /// Initialize a new instance of the ActivePageChangedEventArgs class.
-		/// </summary>
+        /// </summary>
         /// <param name="oldPage">Previous active page value.</param>
         /// <param name="newPage">New active page value.</param>
         public ActivePageChangedEventArgs(KryptonPage oldPage,
                                           KryptonPage newPage)
-		{
+        {
             OldPage = oldPage;
             NewPage = newPage;
         }
-		#endregion
+        #endregion
 
-		#region Public
-		/// <summary>
+        #region Public
+        /// <summary>
         /// Gets the old page reference.
-		/// </summary>
+        /// </summary>
         public KryptonPage OldPage { get; }
 
-	    /// <summary>
+        /// <summary>
         /// Gets the new page reference.
         /// </summary>
         public KryptonPage NewPage { get; }
 
-	    #endregion
-	}
+        #endregion
+    }
 }

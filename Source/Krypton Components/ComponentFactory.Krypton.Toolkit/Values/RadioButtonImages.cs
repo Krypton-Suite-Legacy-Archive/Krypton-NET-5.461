@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -14,9 +14,9 @@ using System.ComponentModel;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
-	/// <summary>
-	/// Storage for radio button images.
-	/// </summary>
+    /// <summary>
+    /// Storage for radio button images.
+    /// </summary>
     public class RadioButtonImages : Storage
     {
         #region Instance Fields
@@ -34,7 +34,7 @@ namespace ComponentFactory.Krypton.Toolkit
         #region Identity
         /// <summary>
         /// Initialize a new instance of the RadioButtonImages class.
-		/// </summary>
+        /// </summary>
         public RadioButtonImages()
             : this(null)
         {
@@ -42,10 +42,10 @@ namespace ComponentFactory.Krypton.Toolkit
 
         /// <summary>
         /// Initialize a new instance of the RadioButtonImages class.
-		/// </summary>
+        /// </summary>
         /// <param name="needPaint">Delegate for notifying paint requests.</param>
         public RadioButtonImages(NeedPaintHandler needPaint) 
-		{
+        {
             // Store the provided paint notification delegate
             NeedPaint = needPaint;
 
@@ -62,20 +62,20 @@ namespace ComponentFactory.Krypton.Toolkit
         }
         #endregion
 
-		#region IsDefault
-		/// <summary>
-		/// Gets a value indicating if all values are default.
-		/// </summary>
-		[Browsable(false)]
-		public override bool IsDefault => (_common == null) &&
-		                                  (_uncheckedDisabled == null) &&
-		                                  (_uncheckedNormal == null) &&
-		                                  (_uncheckedTracking == null) &&
-		                                  (_uncheckedPressed == null) &&
-		                                  (_checkedDisabled == null) &&
-		                                  (_checkedNormal == null) &&
-		                                  (_checkedTracking == null) &&
-		                                  (_checkedPressed == null);
+        #region IsDefault
+        /// <summary>
+        /// Gets a value indicating if all values are default.
+        /// </summary>
+        [Browsable(false)]
+        public override bool IsDefault => (_common == null) &&
+                                          (_uncheckedDisabled == null) &&
+                                          (_uncheckedNormal == null) &&
+                                          (_uncheckedTracking == null) &&
+                                          (_uncheckedPressed == null) &&
+                                          (_checkedDisabled == null) &&
+                                          (_checkedNormal == null) &&
+                                          (_checkedTracking == null) &&
+                                          (_checkedPressed == null);
 
         #endregion
 

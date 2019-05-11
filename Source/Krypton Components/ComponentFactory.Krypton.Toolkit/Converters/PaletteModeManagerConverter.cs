@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -31,6 +31,7 @@ namespace ComponentFactory.Krypton.Toolkit
                                              new Pair(PaletteModeManager.Office365Black,        "Office 365 - Black"),
                                              new Pair(PaletteModeManager.Office365Blue,         "Office 365 - Blue"),
                                              new Pair(PaletteModeManager.Office365Silver,       "Office 365 - Silver"),
+                                             new Pair(PaletteModeManager.Office365White,        "Office 365 - White"),
                                              new Pair(PaletteModeManager.SparkleBlue,           "Sparkle - Blue"),
                                              new Pair(PaletteModeManager.SparkleOrange,         "Sparkle - Orange"),
                                              new Pair(PaletteModeManager.SparklePurple,         "Sparkle - Purple")};

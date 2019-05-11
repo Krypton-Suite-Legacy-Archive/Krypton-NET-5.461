@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -14,48 +14,48 @@ using ComponentFactory.Krypton.Workspace;
 
 namespace ComponentFactory.Krypton.Docking
 {
-	/// <summary>
+    /// <summary>
     /// Event arguments for a DockableWorkspaceCellAdding/DockableWorkspaceCellRemoving events.
-	/// </summary>
-	public class DockableWorkspaceCellEventArgs : EventArgs
-	{
-		#region Instance Fields
+    /// </summary>
+    public class DockableWorkspaceCellEventArgs : EventArgs
+    {
+        #region Instance Fields
 
-	    #endregion
-		
+        #endregion
+        
         #region Identity
-		/// <summary>
+        /// <summary>
         /// Initialize a new instance of the DockableWorkspaceCellEventArgs class.
-		/// </summary>
+        /// </summary>
         /// <param name="workspace">Reference to existing dockable workspace control instance.</param>
         /// <param name="element">Reference to docking workspace element that is managing the dockable workspace control.</param>
         /// <param name="cell">Reference to workspace control cell instance.</param>
         public DockableWorkspaceCellEventArgs(KryptonDockableWorkspace workspace,
                                               KryptonDockingWorkspace element,
                                               KryptonWorkspaceCell cell)
-		{
+        {
             DockableWorkspaceControl = workspace;
             WorkspaceElement = element;
             CellControl = cell;
-		}
-		#endregion
+        }
+        #endregion
 
-		#region Public
+        #region Public
         /// <summary>
         /// Gets a reference to the KryptonDockableWorkspace that contains the cell.
         /// </summary>
         public KryptonDockableWorkspace DockableWorkspaceControl { get; }
 
-	    /// <summary>
+        /// <summary>
         /// Gets a reference to the KryptonDockingWorkspace that is managing the dockable workspace.
         /// </summary>
         public KryptonDockingWorkspace WorkspaceElement { get; }
 
-	    /// <summary>
+        /// <summary>
         /// Gets a reference to the KryptonWorkspaceCell control.
         /// </summary>
         public KryptonWorkspaceCell CellControl { get; }
 
-	    #endregion
-	}
+        #endregion
+    }
 }

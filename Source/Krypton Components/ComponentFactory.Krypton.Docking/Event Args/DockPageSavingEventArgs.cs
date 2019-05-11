@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -14,19 +14,19 @@ using ComponentFactory.Krypton.Navigator;
 
 namespace ComponentFactory.Krypton.Docking
 {
-	/// <summary>
+    /// <summary>
     /// Event data for saving docking page configuration.
-	/// </summary>
+    /// </summary>
     public class DockPageSavingEventArgs : DockGlobalSavingEventArgs
-	{
-		#region Instance Fields
+    {
+        #region Instance Fields
 
-	    #endregion
+        #endregion
 
-		#region Identity
-		/// <summary>
+        #region Identity
+        /// <summary>
         /// Initialize a new instance of the DockPageSavingEventArgs class.
-		/// </summary>
+        /// </summary>
         /// <param name="manager">Reference to owning docking manager instance.</param>
         /// <param name="xmlWriter">Xml writer for persisting custom data.</param>
         /// <param name="page">Reference to page being saved.</param>
@@ -34,17 +34,17 @@ namespace ComponentFactory.Krypton.Docking
                                        XmlWriter xmlWriter,
                                        KryptonPage page)
             : base(manager, xmlWriter)
-		{
+        {
             Page = page;
-		}
-		#endregion
+        }
+        #endregion
 
-		#region Public
+        #region Public
         /// <summary>
         /// Gets the saving page reference.
         /// </summary>
         public KryptonPage Page { get; }
 
-	    #endregion
-	}
+        #endregion
+    }
 }

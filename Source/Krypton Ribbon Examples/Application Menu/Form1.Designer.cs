@@ -106,6 +106,7 @@ namespace ApplicationMenu
             this.buttonSpecAppMenu2});
             this.kryptonRibbon1.RibbonTabs.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1});
+            this.kryptonRibbon1.SelectedContext = null;
             this.kryptonRibbon1.SelectedTab = this.kryptonRibbonTab1;
             this.kryptonRibbon1.Size = new System.Drawing.Size(519, 115);
             this.kryptonRibbon1.TabIndex = 0;
@@ -315,10 +316,6 @@ namespace ApplicationMenu
             this.buttonSystem.TextLine1 = "System";
             this.buttonSystem.Click += new System.EventHandler(this.buttonSystem_Click);
             // 
-            // kryptonManager1
-            // 
-            this.kryptonManager1.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Office2010Silver;
-            // 
             // kryptonPanel1
             // 
             this.kryptonPanel1.Controls.Add(this.kryptonGroup1);
@@ -439,6 +436,7 @@ namespace ApplicationMenu
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.Text = "Application Menu";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).EndInit();

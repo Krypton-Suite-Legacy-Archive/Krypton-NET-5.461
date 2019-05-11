@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -18,9 +18,9 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace ComponentFactory.Krypton.Ribbon
 {
-	/// <summary>
-	/// Layout area for the application button.
-	/// </summary>
+    /// <summary>
+    /// Layout area for the application button.
+    /// </summary>
     internal class ViewLayoutRibbonAppButton : ViewLayoutDocker
     {
         #region Static Fields
@@ -121,10 +121,10 @@ namespace ComponentFactory.Krypton.Ribbon
             return base.GetPreferredSize(context);
         }
 
-		/// <summary>
-		/// Perform a layout of the elements.
-		/// </summary>
-		/// <param name="context">Layout context.</param>
+        /// <summary>
+        /// Perform a layout of the elements.
+        /// </summary>
+        /// <param name="context">Layout context.</param>
         public override void Layout(ViewLayoutContext context)
         {
             UpdateSeparatorSize();

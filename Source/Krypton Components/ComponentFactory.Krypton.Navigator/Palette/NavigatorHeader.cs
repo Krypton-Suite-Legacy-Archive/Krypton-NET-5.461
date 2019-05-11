@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -15,9 +15,9 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace ComponentFactory.Krypton.Navigator
 {
-	/// <summary>
-	/// Storage for header related properties.
-	/// </summary>
+    /// <summary>
+    /// Storage for header related properties.
+    /// </summary>
     public class NavigatorHeader : Storage
     {
         #region Instance Fields
@@ -37,12 +37,12 @@ namespace ComponentFactory.Krypton.Navigator
         #region Identity
         /// <summary>
         /// Initialize a new instance of the NavigatorHeader class.
-		/// </summary>
+        /// </summary>
         /// <param name="navigator">Reference to owning navigator instance.</param>
         /// <param name="needPaint">Delegate for notifying paint requests.</param>
         public NavigatorHeader(KryptonNavigator navigator,
                                NeedPaintHandler needPaint)
-		{
+        {
             Debug.Assert(navigator != null);
             
             // Remember back reference
@@ -64,7 +64,7 @@ namespace ComponentFactory.Krypton.Navigator
             HeaderValuesPrimary = new HeaderGroupMappingPrimary(_navigator, needPaint);
             HeaderValuesSecondary = new HeaderGroupMappingSecondary(_navigator, needPaint);
         }
-		#endregion
+        #endregion
 
         #region IsDefault
         /// <summary>

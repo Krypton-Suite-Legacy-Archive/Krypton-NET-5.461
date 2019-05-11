@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -15,9 +15,9 @@ using System.Diagnostics;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
-	/// <summary>
-	/// Storage for bar values for a navigator state.
-	/// </summary>
+    /// <summary>
+    /// Storage for bar values for a navigator state.
+    /// </summary>
     public class KryptonPaletteNavigatorStateBar : Storage,
                                                    IPaletteMetric
     {
@@ -37,12 +37,12 @@ namespace ComponentFactory.Krypton.Toolkit
         #region Identity
         /// <summary>
         /// Initialize a new instance of the KryptonPaletteNavigatorStateBar class.
-		/// </summary>
+        /// </summary>
         /// <param name="redirect">Redirection for inheriting values.</param>
         /// <param name="needPaint">Delegate for notifying paint requests.</param>
         public KryptonPaletteNavigatorStateBar(PaletteRedirect redirect,
                                                NeedPaintHandler needPaint) 
-		{
+        {
             Debug.Assert(redirect != null);
 
             // Remember redirection for inheritence
@@ -64,20 +64,20 @@ namespace ComponentFactory.Krypton.Toolkit
         }
         #endregion
 
-		#region IsDefault
-		/// <summary>
-		/// Gets a value indicating if all values are default.
-		/// </summary>
-		[Browsable(false)]
-		public override bool IsDefault => BarPaddingTabs.Equals(CommonHelper.InheritPadding) &&
-		                                  BarPaddingInside.Equals(CommonHelper.InheritPadding) &&
-		                                  BarPaddingOutside.Equals(CommonHelper.InheritPadding) &&
-		                                  BarPaddingOnly.Equals(CommonHelper.InheritPadding) &&
-		                                  ButtonPadding.Equals(CommonHelper.InheritPadding) &&
-		                                  (ButtonEdgeInside == -1) &&
-		                                  (ButtonEdgeOutside == -1) &&
-		                                  (CheckButtonGap == -1) &&
-		                                  (RibbonTabGap == -1);
+        #region IsDefault
+        /// <summary>
+        /// Gets a value indicating if all values are default.
+        /// </summary>
+        [Browsable(false)]
+        public override bool IsDefault => BarPaddingTabs.Equals(CommonHelper.InheritPadding) &&
+                                          BarPaddingInside.Equals(CommonHelper.InheritPadding) &&
+                                          BarPaddingOutside.Equals(CommonHelper.InheritPadding) &&
+                                          BarPaddingOnly.Equals(CommonHelper.InheritPadding) &&
+                                          ButtonPadding.Equals(CommonHelper.InheritPadding) &&
+                                          (ButtonEdgeInside == -1) &&
+                                          (ButtonEdgeOutside == -1) &&
+                                          (CheckButtonGap == -1) &&
+                                          (RibbonTabGap == -1);
 
         #endregion
 

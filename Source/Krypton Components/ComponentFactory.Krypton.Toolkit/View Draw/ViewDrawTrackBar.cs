@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -69,7 +69,7 @@ namespace ComponentFactory.Krypton.Toolkit
         #region Identity
         /// <summary>
         /// Initialize a new instance of the ViewDrawTrackBar class.
-		/// </summary>
+        /// </summary>
         /// <param name="stateNormal">Referenece to normal state values.</param>
         /// <param name="stateDisabled">Referenece to disabled state values.</param>
         /// <param name="stateTracking">Referenece to tracking state values.</param>
@@ -81,7 +81,7 @@ namespace ComponentFactory.Krypton.Toolkit
                                 PaletteTrackBarPositionStatesOverride statePressed,
                                 NeedPaintHandler needPaint)
             : base(stateNormal.Back)
-		{
+        {
             // Default state
             StateNormal = stateNormal;
             StateDisabled = stateDisabled;
@@ -118,16 +118,16 @@ namespace ComponentFactory.Krypton.Toolkit
             Add(_layoutTop);
         }
 
-		/// <summary>
-		/// Obtains the String representation of this instance.
-		/// </summary>
-		/// <returns>User readable name of the instance.</returns>
-		public override string ToString()
-		{
-			// Return the class name and instance identifier
+        /// <summary>
+        /// Obtains the String representation of this instance.
+        /// </summary>
+        /// <returns>User readable name of the instance.</returns>
+        public override string ToString()
+        {
+            // Return the class name and instance identifier
             return "ViewDrawTrackBar:" + Id;
-		}
-		#endregion
+        }
+        #endregion
 
         #region Public
         /// <summary>

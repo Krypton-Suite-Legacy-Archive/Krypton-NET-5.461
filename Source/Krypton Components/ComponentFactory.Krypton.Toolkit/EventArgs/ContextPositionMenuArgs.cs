@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -13,16 +13,16 @@ using System.Windows.Forms;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
-	/// <summary>
-	/// Details for context menu related events that have a requested relative position.
-	/// </summary>
+    /// <summary>
+    /// Details for context menu related events that have a requested relative position.
+    /// </summary>
     public class ContextPositionMenuArgs : ContextMenuArgs
-	{
-		#region Instance Fields
+    {
+        #region Instance Fields
 
-	    #endregion
+        #endregion
 
-		#region Identity
+        #region Identity
         /// <summary>
         /// Initialize a new instance of the ContextMenuArgs class.
         /// </summary>
@@ -33,12 +33,12 @@ namespace ComponentFactory.Krypton.Toolkit
 
         /// <summary>
         /// Initialize a new instance of the ContextMenuArgs class.
-		/// </summary>
+        /// </summary>
         /// <param name="cms">Context menu strip that can be customized.</param>
         public ContextPositionMenuArgs(ContextMenuStrip cms)
             : this(cms, null, KryptonContextMenuPositionH.Left, KryptonContextMenuPositionV.Below)
-		{
-		}
+        {
+        }
 
         /// <summary>
         /// Initialize a new instance of the ContextMenuArgs class.
@@ -71,17 +71,17 @@ namespace ComponentFactory.Krypton.Toolkit
         }
         #endregion
 
-		#region Public
-		/// <summary>
+        #region Public
+        /// <summary>
         /// Gets and sets the relative horizontal position of the KryptonContextMenu.
-		/// </summary>
+        /// </summary>
         public KryptonContextMenuPositionH PositionH { get; set; }
 
-	    /// <summary>
+        /// <summary>
         /// Gets and sets the relative vertical position of the KryptonContextMenu.
         /// </summary>
         public KryptonContextMenuPositionV PositionV { get; set; }
 
-	    #endregion
-	}
+        #endregion
+    }
 }

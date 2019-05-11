@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.461)
 //  Version 5.461.0.0  www.ComponentFactory.com
@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
-	/// <summary>
-	/// Provides the Silver color scheme variant of the Office 2007 palette.
-	/// </summary>
+    /// <summary>
+    /// Provides the Silver color scheme variant of the Office 2007 palette.
+    /// </summary>
     public class PaletteOffice2007Silver : PaletteOffice2007Base
     {
         #region Static Fields
@@ -284,7 +284,7 @@ namespace ComponentFactory.Krypton.Toolkit
 
         /// <summary>
         /// Initialize a new instance of the PaletteOffice2007Silver class.
-		/// </summary>
+        /// </summary>
         public PaletteOffice2007Silver()
             : base(_schemeColors,
                    _checkBoxList,
@@ -292,16 +292,16 @@ namespace ComponentFactory.Krypton.Toolkit
                    _radioButtonArray,
                    _trackBarColors)
         {
-		}
-		#endregion
+        }
+        #endregion
 
         #region Back
-		/// <summary>
-		/// Gets the color background drawing style.
-		/// </summary>
-		/// <param name="style">Background style.</param>
-		/// <param name="state">Palette value should be applicable to this state.</param>
-		/// <returns>Color drawing style.</returns>
+        /// <summary>
+        /// Gets the color background drawing style.
+        /// </summary>
+        /// <param name="style">Background style.</param>
+        /// <param name="state">Palette value should be applicable to this state.</param>
+        /// <returns>Color drawing style.</returns>
         public override PaletteColorStyle GetBackColorStyle(PaletteBackStyle style, PaletteState state)
         {
             switch (style)
